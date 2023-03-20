@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+}
+
+.wrapper-logo{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    border: none;
+    height: 8vh;
+    width: 100vw;
+    position: fixed;
+    background-color: white;
+    box-sizing: border-box;
+}
+.tela1{
+    display: flex;
+    height: 142vh;
+    width: 98vw;
+}
+.menu-left{
+    padding-left: 1vw;
+    padding-right: 11vw;
+}
+
+.menu-right{
+    padding-right: 1vw;
+}
+.logo{
+    justify-content: center;
+    align-items: center;
+}
+.high{
+    height: 5vh;
+}
+.shop-left{
+    width: 50vw;
+    height: 100vh;
+}
+.img-left{
+    width: 45vw;
+    padding-left: 3vw;
+    padding-top: 4vw;
+}
+.shop-right{
+    width: 50vw;
+    height: 120vw;
+
+}
+.top{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    padding-top: 8vh;   
+}
+.down{
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+.prod1{
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.prod2{
+    width: 50%;
+    height: 100%;
+}
+.prod3{
+    width: 50%;
+    height: 100%;
+}
+.prod4{
+    width: 50%;
+    height: 100%;
+}
+.hoddie{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 75%;
+}
+.img-hoddie{
+    display: flex;
+    width: 22.5vw;
+}
+.legenda-prod1{
+    text-align: center;
+    height: 12%;
+    width: 100%;
+}
+.tamanhos-prod1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 5%;
+    width: 100%;
+}
+.Text{
+    text-align: center;
+}
+.Htext{
+    text-align: center;
+    width: 50vw;
+    height: 20vh;
+}
+.tela2{
+    height: 118vh;
+    width: 98vw;
+}
+.top2{
+    height: 59vh;
+    width: 98vw;
+    display: flex;
+}
+.down2{
+    height: 59vh;
+    width: 98vw;
+    display: flex;
+}
+.tela3{
+    display: flex;
+}
