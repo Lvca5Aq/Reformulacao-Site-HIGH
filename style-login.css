@@ -1,0 +1,92 @@
+.menu-left{
+    padding-left: 1vw;
+    padding-right: 11vw;
+}
+.menu-right{
+    padding-right: 1vw;
+}
+.logo{
+    justify-content: center;
+    align-items: center;
+}
+.high{
+    height: 5vh;
+}
+body{
+    margin: 0;
+}
+.wrapper-logo{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    border: none;
+    height: 8vh;
+    width: 100vw;
+    position: fixed;
+    background-color: white;
+    box-sizing: border-box;
+}
+.menu-right > a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    border-radius: 20px;
+}
+.tela1-login{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+.login-left{
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    margin-right: 1.5vw;
+}
+.login-right{
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-left: 1.5vw;
+}
+.card-login{
+    width: 70%;
+}
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 20px;
+    outline: none;
+}
+.textfield{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-bottom: 10px;
+}
+.btn-login{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+}
+.btn-login-entrar{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 26px;
+    border: 1px solid black;
+}

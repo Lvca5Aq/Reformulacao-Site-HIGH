@@ -1,5 +1,7 @@
 body{
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .wrapper-logo{
@@ -15,7 +17,7 @@ body{
 }
 .tela1{
     display: flex;
-    height: 142vh;
+    height: 125vh;
     width: 98vw;
 }
 .menu-left{
@@ -24,7 +26,7 @@ body{
 }
 
 .menu-right{
-    padding-right: 1vw;
+    margin-right: 30px;
 }
 .logo{
     justify-content: center;
@@ -38,6 +40,7 @@ body{
     height: 100vh;
 }
 .img-left{
+    height: 116vh;
     width: 45vw;
     padding-left: 3vw;
     padding-top: 4vw;
@@ -96,7 +99,7 @@ body{
 .tamanhos-prod1{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 5%;
     width: 100%;
 }
@@ -124,4 +127,40 @@ body{
 }
 .tela3{
     display: flex;
+}
+button{
+    border-radius: 10px;
+    
+}
+.menu-right > a{
+    text-decoration: none;
+    color: black;
+}
+#menu{
+    display: none;
+}
+.menu{
+    background-color: rgb(255, 255, 255);
+    margin-top: 7vh;
+    height: 93vh;
+    width: 30vw;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.menu-top{
+    width: 80%;
+}
+.menu-bot{
+    width: 80%;
+}
+.categorias{
+    display: flex;
+    width: 100%;
+}
+.categorias > div{
+    margin-right: 10px;
+    margin-bottom: 5px;
+    width: 50%;
 }
