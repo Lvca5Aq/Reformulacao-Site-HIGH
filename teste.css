@@ -1,0 +1,7 @@
+.conteudo {
+    display: none;
+ }
+ 
+ .mostrar-div:hover + .conteudo {
+    display: block;
+ }

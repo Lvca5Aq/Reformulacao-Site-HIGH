@@ -22,7 +22,7 @@ body{
 }
 .menu-left{
     padding-left: 1vw;
-    padding-right: 11vw;
+    padding-right: 4.5vw;
 }
 
 .menu-right{
@@ -97,7 +97,7 @@ body{
     width: 100%;
 }
 .tamanhos-prod1{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     height: 5%;
@@ -105,6 +105,7 @@ body{
 }
 .Text{
     text-align: center;
+    display: none;
 }
 .Htext{
     text-align: center;
@@ -129,8 +130,7 @@ body{
     display: flex;
 }
 button{
-    border-radius: 10px;
-    
+    border-radius: 50px;
 }
 .menu-right > a{
     text-decoration: none;
@@ -163,4 +163,23 @@ button{
     margin-right: 10px;
     margin-bottom: 5px;
     width: 50%;
+}
+button{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+}
+.menu-right > label{
+    display: none;
+}
+.menu-right > input{
+    display: none;
+}
+.shop{
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.prod1:hover + .tamanhos-prod1{
+    display: none;
 }
