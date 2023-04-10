@@ -1,6 +1,6 @@
 .menu-left{
     padding-left: 1vw;
-    padding-right: 11vw;
+    padding-right: 4.5vw;
 }
 .menu-right{
     padding-right: 1vw;
@@ -90,3 +90,47 @@ label{
     margin-bottom: 26px;
     border: 1px solid black;
 }
+button{
+    cursor: pointer;
+}
+.menu-left > button{
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+.menu-right > button{
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+.menu-right > a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+#menu{
+    display: none;
+}
+.menu{
+    background-color: rgb(255, 255, 255);
+    margin-top: 7vh;
+    height: 93vh;
+    width: 30vw;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.menu-top{
+    width: 80%;
+}
+.menu-bot{
+    width: 80%;
+}
+.categorias{
+    display: flex;
+    width: 100%;
+}
+.categorias > div{
+    margin-right: 10px;
+    margin-bottom: 5px;
+    width: 50%;
+}   

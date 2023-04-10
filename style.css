@@ -135,6 +135,7 @@ button{
 .menu-right > a{
     text-decoration: none;
     color: black;
+    font-size: 14px;
 }
 #menu{
     display: none;
@@ -169,17 +170,8 @@ button{
     border: none;
     cursor: pointer;
 }
-.menu-right > label{
-    display: none;
-}
-.menu-right > input{
-    display: none;
-}
 .shop{
     align-items: center;
     justify-content: center;
-    display: none;
-}
-.prod1:hover + .tamanhos-prod1{
     display: none;
 }

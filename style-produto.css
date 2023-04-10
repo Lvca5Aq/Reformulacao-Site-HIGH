@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+}
+main{
+    height: 100vh;
+    width: 98vw;
+    display: flex;
+    padding-top: 10vh;
+}
+.right-shop{
+    height: 100%;
+    width: 50%;
+    padding-left: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.right-shop > img{
+    height: 70%;
+}
+
+.left-shop{
+    height: 100%;
+    width: 50%;
+    padding-right: 5vw;
+}
+.btn-tamanho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 55%;
+    margin-bottom: 5px;
+}
+.btn-tmn{
+    border-radius: 10px;
+    background-color: #fff;
+    border: none;
+}
+.btn-shop{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.btn-shp{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.bnt-dsç{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.btn{
+    background-color: #fff;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 5px;
+}
+#descr-tec{
+    display: none;
+}
+#guia-tam{
+    display: none;
+}
+#instru-lav{
+    display: none;
+}
+#bnt-dt{
+    border: none;
+}
+#bnt-gdt{
+    border: none;
+}
+#bnt-idl{
+    border: none;
+}
+.wrapper-logo{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    border: none;
+    height: 8vh;
+    width: 100vw;
+    position: fixed;
+    background-color: white;
+    box-sizing: border-box;
+}
+.menu-left{
+    padding-left: 1vw;
+    padding-right: 4.5vw;
+}
+.menu-right{
+    margin-right: 30px;
+}
+.logo{
+    justify-content: center;
+    align-items: center;
+}
+.high{
+    height: 5vh;
+}
+button{
+    cursor: pointer;
+}
+.menu-left > button{
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+.menu-right > button{
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+.menu-right > a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+#menu{
+    display: none;
+}
+.menu{
+    background-color: rgb(255, 255, 255);
+    margin-top: 7vh;
+    height: 93vh;
+    width: 30vw;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.menu-top{
+    width: 80%;
+}
+.menu-bot{
+    width: 80%;
+}
+.categorias{
+    display: flex;
+    width: 100%;
+}
+.categorias > div{
+    margin-right: 10px;
+    margin-bottom: 5px;
+    width: 50%;
+}   
