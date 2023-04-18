@@ -175,3 +175,6 @@ button{
     justify-content: center;
     display: none;
 }
+main{
+    padding-top: 5vw;
+}
