@@ -178,3 +178,42 @@ button{
 main{
     padding-top: 5vw;
 }
+.card-usuario{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    height: 80vh;
+    width: 30vw;
+}
+.tela{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+.textfield{
+    display: flex;
+    flex-direction: column;
+}
+#formUsuario{
+    width: 100%;
+    height: 100%;
+}
+form>button{
+    border-radius: 20px;
+    border: 1px solid black;
+}
+#Dados{
+    margin-bottom:30px;
+}
+#btnDelete{
+    border: 1px solid black;
+    background-color: crimson;
+}

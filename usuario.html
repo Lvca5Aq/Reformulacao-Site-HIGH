@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="mainUser.js" defer></script>
+</head>
+<body>
+    <script>
+        function titulo(){
+            if(sessionStorage.getItem("token")){
+                document.getElementById("titulo").innerHTML = "USUARIO"
+            }else{
+                document.getElementById("titulo").innerHTML= "LOGIN"
+            }
+    }
+    const token = sessionStorage.getItem('token')
+    console.log(token)
+    axios.get('http://localhost:3000/usuarios/ajustes',{
+        headers: {
+            token: token
+        }
+    })
+        .then(function (response) {
+            document.getElementById('nomeUsuario').value    =   response.data.nome;
+            document.getElementById("sobrenomeUsuario").value = response.data.sobreNome;
+            document.getElementById("emailUsuario").value = response.data.email;
+            document.getElementById("emailUsuario").readOnly = true;
+            })
+        .catch(function (err) {
+            alert(err.message);
+            });
+    </script>
+    <div class="wrapper-logo">
+        <div id="menu-left" class="menu-left">
+            <button id="bot-menu">MENU</button>
+        </div>
+        <div>
+            <a href="./index.html"><img class="high" src="./imagens/logo.png" ></a>
+        </div>
+        <div class="menu-right">
+            <a href="./login.html" id="titulo"><script>titulo();</script></a>
+            <button>CARRINHO</button>
+         </div>
+    </div>
+    <div class="fixed">
+        <div id="menu" class="menu">
+            <div class="menu-top">
+                <h4>Shop</h4>
+                <div class="categorias">
+                    <div>  
+                        <a>New</a>
+                    </div>
+                    <div>
+                        <a>All</a>
+                    </div>
+                </div>
+                <div class="categorias">
+                    <div>
+                        <a>H-Line</a>
+                    </div>
+                    <div>
+                        <a>Jackets</a>
+                    </div>
+                </div>
+                <div class="categorias">
+                    <div>
+                        <a>Longsleeves</a>
+                    </div>
+                    <div>
+                        <a>Pants</a>
+                    </div>
+                </div>
+                <div class="categorias">
+                    <div>
+                        <a>Shorts</a>
+                    </div>
+                    <div>
+                        <a>Sweatshirts</a>
+                    </div>
+                </div>
+                <div class="categorias">
+                    <div>
+                        <a>Tees</a>
+                    </div>
+                    <div>
+                        <a>Accessories</a>
+                    </div>
+                </div>
+                <div class="categorias">
+                    <div>
+                        <a>Bags</a>
+                    </div>
+                    <div>
+                        <a>Hats</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tela">
+        <div id="resposta"></div>
+        <div class="card-usuario">
+            <form action="" id="formUsuario">
+                <a id="Dados">Meus Dados</a>
+                <div class="textfield">
+                    <label for="nomeUsuario">Nome</label>
+                    <input id="nomeUsuario" type="text">
+                </div>
+                <div class="textfield">
+                    <label for="sobrenomeUsuario">Sobrenome</label>
+                    <input id="sobrenomeUsuario" type="text" placeholder="Modifique o seu sobrenome">
+                </div>
+                <div class="textfield">
+                    <label for="emailUsuario">Email</label>
+                    <input id="emailUsuario" type="text" placeholder="Modifique o seu email">
+                </div>
+                <a>Alterar minha senha</a>
+                <div class="textfield">
+                    <label for="senhaUsuario">Nova Senha</label>
+                    <input id="senhaUsuario" type="text" placeholder="Modifique a sua senha">
+                </div>
+                <div class="textfield">
+                    <label for="senhaConfimada">Confirmar Nova Senha</label>
+                    <input id="senhaConfimada" type="text" placeholder="Confirme sua Senha">
+                </div>
+                <button id="btnAtualizar">Atualizar Dados</button>
+            </form>
+            <br>
+            <button id="btnDelete">Deletar Conta</button>
+        </div>
+    </div>
+</body>
+</html>

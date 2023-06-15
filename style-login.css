@@ -87,7 +87,7 @@ label{
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: rgb(255, 255, 255);
-    margin-bottom: 26px;
+    margin-bottom: 0px;
     border: 1px solid black;
 }
 button{
@@ -133,4 +133,7 @@ button{
     margin-right: 10px;
     margin-bottom: 5px;
     width: 50%;
-}   
+}
+h1 {
+    margin: 0.2vh;
+}

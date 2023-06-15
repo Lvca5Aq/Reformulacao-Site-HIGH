@@ -6,8 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HIGH Company</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
+    <script>
+        function titulo(){
+            if(sessionStorage.getItem("token")){
+                document.getElementById("titulo").innerHTML = "USUARIO"
+            }else{
+                document.getElementById("titulo").innerHTML= "LOGIN"
+            }
+        }
+        function redirectToPage(event) {
+            event.preventDefault(); // Evita o comportamento padrão do link
+            const token = sessionStorage.getItem('token');
+            if (token) {
+                // Se o token existe, redirecionar para a página de dashboard
+                window.location.href = './usuario.html';
+            } else {
+                // Se o token não existe, redirecionar para a página de login
+                window.location.href = './login.html';
+            }
+}
+    </script>
     <div class="wrapper-logo">
         <div id="menu-left" class="menu-left">
             <button id="bot-menu">MENU</button>
@@ -16,7 +37,7 @@
             <a href="./index.html"><img class="high" src="./imagens/logo.png" ></a>
         </div>
         <div class="menu-right">
-            <a href="./login.html">LOGIN</a>
+            <a href="#" onclick="redirectToPage(event)" id="titulo"><script>titulo();</script></a>
             <button>CARRINHO</button>
          </div>
     </div>

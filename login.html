@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HIGH Company</title>
     <link rel="stylesheet" href="style-login.css">
+    <script src="main.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <div class="wrapper-logo">
         <div id="menu-left" class="menu-left">
             <button id="bot-menu">MENU</button>
@@ -78,51 +81,57 @@
     <div class="tela1-login">
         <div class="login-left">
             <div class="card-login">
-                <H1>JÁ TENHO CADASTRO</H1>
-                <div class="textfield">
-                    <label for="e-mail">E-MAIL</label>
-                    <input type="text" name="e-mail" placeholder="INSIRA SEU E-MAIL">
-                </div>
-                <div class="textfield">
-                    <label for="senha">SENHA</label>
-                    <input type="password" name="senha" placeholder="INSIRA SUA SENHA">
-                </div>
-                <button class="btn-login-entrar">ENTRAR</button>
-                <H1>ESQUECI MINHA SENHA</H1>
-                <div class="textfield">
-                    <label for="e-mail">E-MAIL</label>
-                    <input type="text" name="e-mail" placeholder="INSIRA SEU E-MAIL">
-                </div>
-                <button class="btn-login">RECUPERAR SENHA</button>
+                <form action="" id="formLogin">
+                    <H1>JÁ TENHO CADASTRO</H1>
+                    <div class="textfield">
+                        <label for="emailLogin">E-MAIL</label>
+                        <input id="emailLogin" type="text" placeholder="INSIRA SEU E-MAIL">
+                    </div>
+                    <div class="textfield">
+                        <label for="senhaLogin">SENHA</label>
+                        <input type="password" id="senhaLogin" placeholder="INSIRA SUA SENHA">
+                    </div>
+                    <button id="btnLogin" class="btn-login-entrar">ENTRAR</button>
+                    <H1>ESQUECI MINHA SENHA</H1>
+                    <div class="textfield">
+                        <label for="emailRec">E-MAIL</label>
+                        <input id="emailRec" type="text" placeholder="INSIRA SEU E-MAIL">
+                    </div>
+                    <div class="textfield">
+                        <label for="novaSenha">NOVA SENHA</label>
+                        <input type="password" id="novaSenha" placeholder="INSIRA SUA NOVA SENHA">
+                    </div>
+                    <button id="bntRecuperaçao" class="btn-login">RECUPERAR SENHA</button>
+                </form>
             </div>
         </div>
         <div class="login-right">
-            <div>
+            <form action="" id="form.register">
                 <H1>AINDA NÃO TENHO CADASTRO</H1>
                 <div class="textfield">
                     <label for="nome">NOME</label>
-                    <input type="text" name="nome" placeholder="INSIRA SEU NOME">
+                    <input id="nome" type="text" placeholder="INSIRA SEU NOME">
                 </div>
                 <div class="textfield">
-                    <label for="sobrenome">SOBRENOME</label>
-                    <input type="text" name="sobrenome" placeholder="INSIRA SEU SOBRENOME">
+                    <label for="sobreNome">SOBRENOME</label>
+                    <input id="sobreNome" type="text" placeholder="INSIRA SEU SOBRENOME">
                 </div>
                 <div class="textfield">
-                    <label for="e-mail">E-MAIL</label>
-                    <input type="text" name="e-mail" placeholder="INSIRA SEU E-MAIL">
+                    <label for="email.register">E-MAIL</label>
+                    <input id="email.register" type="text" placeholder="INSIRA SEU E-MAIL">
                 </div>
                 <div class="textfield">
-                    <label for="senha">SENHA</label>
-                    <input type="password" name="senha" placeholder="INSIRA SUA SENHA">
+                    <label for="senha.register">SENHA</label>
+                    <input id="senha.register" type="password" placeholder="INSIRA SUA SENHA">
                 </div>
                 <div class="textfield">
-                    <label for="c-senha">CONFIRME SUA SENHA</label>
-                    <input type="password" name="c-senha" placeholder="CONFIRME SUA SENHA">
+                    <label for="confirmSenha">CONFIRME SUA SENHA</label>
+                    <input id="confirmSenha" type="password" placeholder="CONFIRME SUA SENHA">
                 </div>
-                <button class="btn-login">ENVIAR</button>
-            </div>
+                <button id="btnRegister" class="btn-login">ENVIAR</button>
+            </form>
         </div>
     </div>
-    <script src="./main.js"></script>
+    <div id="resposta"></div>
 </body>
 </html>
