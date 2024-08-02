@@ -46,8 +46,7 @@ btnRegister.addEventListener("click", () => {
     })
     .catch(function (error) {
         // Exibe a mensagem de erro na página HTML
-        var divResposta = document.getElementById("resposta");
-        divResposta.innerText = error.response.data.msg;
+        alert(error.response.data.msg)
       });
 
 });
